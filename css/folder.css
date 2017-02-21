@@ -1,0 +1,59 @@
+body {
+ 	width: 100%;
+ 	margin: 0 auto;
+ }
+
+img {
+    max-width: 100%;
+    border: 0;
+    height: auto;
+    width: auto;
+}
+
+header {
+	text-align: center;
+	padding: 20px 0;
+	background-color: #eee;
+	width: 100%;
+	margin-bottom: 20px;
+}
+footer {
+	width: 100%;
+	background-color: #1e1e1e;
+    display: table;
+    margin: 0 auto;
+    padding: 30px 0;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    height: 50px;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#myDiagramDiv {
+	height: 500px;
+	width: 100%;
+}
+
+button {
+	border: 3px solid #393939;
+    background: white;
+    color: #393939;
+    width: auto;
+    padding: 0 20px;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    outline: 0;
+    border-radius: initial;
+}
+
+button:hover {
+	border: 3px solid #e62422;
+    color: #e62422;
+}
