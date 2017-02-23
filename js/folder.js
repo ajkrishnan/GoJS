@@ -11,16 +11,21 @@ function showFolder() {
      allowMove: false,
     "undoManager.isEnabled": true,
     "textEditingTool.starting": go.TextEditingTool.SingleClick,
-    layout: $$(go.TreeLayout, { angle: 90, nodeSpacing: 40, layerSpacing: 40, layerStyle: go.TreeLayout.LayerUniform })
+    layout: $$(go.TreeLayout, 
+      { angle: 90, 
+        nodeSpacing: 40, 
+        layerSpacing: 40, 
+        layerStyle: go.TreeLayout.LayerUniform 
+      })
   });
 
-  var qfonts = '#c34242',
-    qCss = '#7b6cea',
-    qJs = '#eae76c',
-    qImage = '#e91e63',
-    qPdf = '#114e11',
-    qlib = '#35a1d6',
-    qSrc = '#009688';
+  var qfonts = '#d44025',
+    qCss = '#f99501',
+    qJs = '#ef8876',
+    qImage = '#d6554c',
+    qPdf = '#ff5722',
+    qlib = '#5f1b06',
+    qSrc = '#75493b';
 
   myDiagram.add(
     $$(go.Part, "Table", { position: new go.Point(1200, 0), selectable: false },
