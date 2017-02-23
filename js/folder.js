@@ -4,6 +4,7 @@ function showFolder() {
 
  myDiagram =
   $$(go.Diagram, "myDiagramDiv", {
+    initialContentAlignment: go.Spot.Center,
     "toolManager.hoverDelay": 100,
      allowCopy: false,
      allowDelete: false,
@@ -22,7 +23,7 @@ function showFolder() {
     qSrc = '#009688';
 
   myDiagram.add(
-    $$(go.Part, "Table", { position: new go.Point(200, 10), selectable: false },
+    $$(go.Part, "Table", { position: new go.Point(1200, 0), selectable: false },
       $$(go.TextBlock, "Key", {
         row: 0,
         font: "700 14px Droid Serif, sans-serif"
@@ -87,6 +88,7 @@ function showFolder() {
 
   myDiagram.nodeTemplate =
     $$(go.Node, "Auto", {
+      isTreeExpanded: false ,
       deletable: false,
       toolTip: tooltiptemplate,
       click: showDetail
@@ -106,7 +108,16 @@ function showFolder() {
       margin: 10,
       editable: true
     },
-    new go.Binding("text", "name"))
+    new go.Binding("text", "name")),
+     $$(go.Panel,  { 
+        height: 45 
+      }, 
+      $$("TreeExpanderButton",
+          {
+            margin: 30,
+          }
+        )
+      )
   );
 
   myDiagram.linkTemplate =
