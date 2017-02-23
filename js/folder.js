@@ -71,7 +71,7 @@ function showFolder() {
 
   var tooltiptemplate =
     $$(go.Adornment, "Auto",
-      $$(go.Shape, "Rectangle", { fill: "whitesmoke", stroke: "black" }),
+      $$(go.Shape, "RoundedRectangle", { fill: "whitesmoke", stroke: "black" }),
       $$(go.TextBlock, {
         font: "bold 8pt Helvetica, bold Arial, sans-serif",
         wrap: go.TextBlock.WrapFit,
